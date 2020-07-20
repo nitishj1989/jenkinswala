@@ -9,7 +9,7 @@ pipeline{
         }
         stage('testing'){
             when{
-                branch 'master'
+                branch 'no-master'
             }
             steps{
                 sh "ls -lrt"
