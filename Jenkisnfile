@@ -8,6 +8,9 @@ pipeline{
         
         }
         stage('testing'){
+            when{
+                branch 'master'
+            }
             steps{
                 sh "ls -lrt"
             }
